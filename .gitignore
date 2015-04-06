@@ -1,0 +1,6 @@
+*.b#*
+*.s#*
+*.l#*
+~*.xlsx
+*.bin
+.DS_Store
