@@ -9,10 +9,13 @@ The Hub I is designed to provide secure cloud control to your existing Insteon n
 
 Please let us know if you like this concept.  We need your support and encouragement to make the prototype a product. Send us an email, [support@automategreen.com](mailto:support@automategreen.com), or a tweet, [@AutomateGreen](https://twitter.com/AutomateGreen).
 
-## Major Issues **HELP NEEDED**
+## Work In Progress
 
-1. CRC Generation - All Insteon messages have a CRC byte append to them to ensure the message integrity.  We have failed to correctly generate the required CRC byte. This failure makes all messages sent by the Hub useless. **HELP**
-2. Link Record DB - The all-link record database is not implement yet.  Linking will not work until this is complete.
+Link Record DB - The all-link record database is not implement yet.  Linking will not work until this is complete.
+
+## UPDATE - CRC Solved!!!
+
+The Insteon CRC issue has been solved.  Thank you Wieslaw Strugala for your help.  Insteon uses two different CRC methods: one for power line (PL) and one for radio (RF).  Wieslaw has solved the PL CRC and pointed me to Peter Shipley who solved the Insteon RF CRC, <https://github.com/evilpete/insteonrf>.  Many thanks to Peter, Wieslaw, and all the others who helped.
 
 ## Insteon Over the Spark Cloud
 
